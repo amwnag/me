@@ -1,5 +1,6 @@
 body {
     --chat-bubble: #f2f2f7;
+    --chat-accent: #8edaf8;
 }
 
 
@@ -9,8 +10,9 @@ body {
     word-wrap: break-word;
     border-radius: 25px;
     padding: 10px 20px;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
     position: relative;
+    display: grid;
 }
 
 .chat::before, .chat:after {
@@ -36,26 +38,42 @@ body {
 .chat-them:after {
     left: -26px;
     width: 26px;
-    background-color: #f8f9fa;
+    background-color: var(--bs-light);
     border-bottom-right-radius: 10px;
 }
 
 .chat-me {
 	color: white; 
-	background: #0B93F6;
-	align-self: flex-end !important;
+	background: var(--chat-accent);
+	justify-self: end;
 }
 
 .chat-me::before {
     right: -7px;
     width: 20px;
-    background-color: #0B93F6;
+    background-color: var(--chat-accent);
     border-bottom-left-radius: 16px 14px;
 }
 
 .chat-me::after {
     right: -26px;
     width: 26px;
-    background-color: #f8f9fa;
+    background-color: var(--bs-light);
     border-bottom-left-radius: 10px;
 }
+
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
