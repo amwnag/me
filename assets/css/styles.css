@@ -1,0 +1,61 @@
+body {
+    --chat-bubble: #f2f2f7;
+}
+
+
+/* https://www.freecodecamp.org/news/design-imessage-like-chat-bubble-react-native/ */
+
+.chat {  
+    word-wrap: break-word;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.chat::before, .chat:after {
+    content: "";
+	position: absolute;
+    bottom: 0;
+    height: 25px;
+    
+}
+
+.chat-them {
+    background-color: var(--chat-bubble);
+    align-self: flex-start;
+}
+
+.chat-them::before {
+    left: -7px;
+    width: 20px;
+    background-color: var(--chat-bubble);
+    border-bottom-right-radius: 16px;
+}
+
+.chat-them:after {
+    left: -26px;
+    width: 26px;
+    background-color: #f8f9fa;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-me {
+	color: white; 
+	background: #0B93F6;
+	align-self: flex-end !important;
+}
+
+.chat-me::before {
+    right: -7px;
+    width: 20px;
+    background-color: #0B93F6;
+    border-bottom-left-radius: 16px 14px;
+}
+
+.chat-me::after {
+    right: -26px;
+    width: 26px;
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 10px;
+}
