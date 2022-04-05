@@ -20,7 +20,6 @@ body {
 	position: absolute;
     bottom: 0;
     height: 25px;
-    
 }
 
 .chat-them {
@@ -36,10 +35,11 @@ body {
 }
 
 .chat-them:after {
-    left: -26px;
-    width: 26px;
+    left: -15px;
+    width: 15px;
     background-color: var(--bs-light);
     border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .chat-me {
@@ -56,10 +56,11 @@ body {
 }
 
 .chat-me::after {
-    right: -26px;
-    width: 26px;
+    right: -15px;
+    width: 15px;
     background-color: var(--bs-light);
     border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
@@ -68,12 +69,4 @@ svg {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  .container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%;
-    vertical-align: middle;
-    overflow: hidden;
-  }
+}
