@@ -63,6 +63,13 @@ body {
     border-top-right-radius: 10px;
 }
 
+.card {
+    text-align: left;
+    background-color: var(--chat-bubble);
+    border-radius: 30px;
+    padding: 30px;
+}
+
 
 svg {
     display: inline-block;
