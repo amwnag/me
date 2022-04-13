@@ -68,7 +68,10 @@ body {
     background-color: var(--chat-bubble);
     border-radius: 30px;
     padding: 30px;
+    margin-left: -20%;
+    margin-right: -20%;
 }
+
 
 
 svg {
