@@ -16,6 +16,11 @@
   max-width: 100%;
 }
 
+.img-rounded {
+  border-radius: 6px;
+}
+
+
 .row {
   margin-right: -15px;
   margin-left: -15px;
